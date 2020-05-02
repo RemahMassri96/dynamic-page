@@ -6,7 +6,17 @@ alert(message);
 alert("This is another alert box.");
 
 printName();
-userOrder();
+
+var correct = "AA";
+var guess = "";
+while (guess != correct){
+  guess = prompt ("Question?", "");
+  if (guess == correct){
+    alert ("Correct");
+  } else {
+    alert ("that's not it...");
+  }
+}
 
 function pressConfirm(){
     var result = confirm("Are you sure?");
@@ -29,16 +39,6 @@ function printName(){
     }
 }
 
-function userOrder (){
-    var userOrder = prompt(' what would you like to order ? flower or coffe');
-    var item ='';
-
-    if(userOrder === 'flower'){
-        document.write('<img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"');
-
-    }else if (userOrder === 'coffe'){
-        document.write('<img src="https://static.turbosquid.com/Preview/2014/07/07__23_41_37/coffe_cup_preview_01.jpg6e737ca4-a947-4afb-8073-7748907cba17DefaultHQ.jpg"');
-    }
 
 
-}
+
